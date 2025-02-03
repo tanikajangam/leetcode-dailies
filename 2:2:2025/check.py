@@ -20,8 +20,18 @@ class Solution:
 solution = Solution()
 
 
-# a faster intuition is to find where the decrease happened (nums[i - 1] > nums[i]), 
+# a faster intuition is to find where the decrease happened 
+# (nums[i - 1] > nums[i]), 
 # then check if each side is sorted
+
+# def checkSorted: goes through the array and 
+# checks if the next index is bigger than curr index
+
+# def check: keep the index where the rotation might have happened in a var
+# once you find it, check and see if each side is sorted. 
+# if k=0, then its already sorted
+# if k = wtv, then check nums[k:] (afterwards) + nums[:k] (before) are sorted. 
+
 
 nums = [3,4,5,1,2]
 print(solution.check(nums))
