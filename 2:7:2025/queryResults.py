@@ -3,8 +3,6 @@ from typing import List
 
 class Solution:
     def queryResults(self, limit: int, queries: List[List[int]]) -> List[int]:
-        
-        # good solution attempt however it got TLEd for 4 test cases. 
         colors_freq = {}
         balls = [0]*(limit+1)
         output = []
@@ -29,6 +27,7 @@ class Solution:
         # count = 0
         return output
     
+    
     # Better solution: 
     # def queryResults(self, limit: int, queries: List[List[int]]) -> List[int]:
     #     ball_colors = {}  # Tracks the current color of each ball
@@ -37,9 +36,13 @@ class Solution:
     #     result = []
 
     #     for ball, new_color in queries:
+    
+    
     #         if ball in ball_colors:  
     #             old_color = ball_colors[ball]
+    
     #             color_count[old_color] -= 1
+    
     #             if color_count[old_color] == 0:
     #                 distinct_colors -= 1  # Remove from distinct colors if no ball has it anymore
 
