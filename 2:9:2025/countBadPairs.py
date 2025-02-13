@@ -3,10 +3,10 @@ from typing import List
 
 
 class Solution:
+    
     def countBadPairs(self, nums: List[int]) -> int:
         goodPairs = 0
         freq = {}
-
         for i in range(len(nums)):
             diff = nums[i] - i  
             if diff in freq:
